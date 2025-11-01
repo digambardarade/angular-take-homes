@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Students Table</h2>
+    <div class="mt-4">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.age }}</td>
+                    <td>{{ student.gender }}</td>
+                    <td>{{ student.course }}</td>
+                    <td>
+                        <span class="badge" [ngClass]="student.isActive ? 'badge-success' : 'badge-danger'">
+                            {{ student.isActive ? 'Active' : 'Inactive' }}
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
