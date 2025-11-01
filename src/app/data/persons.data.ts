@@ -1,9 +1,4 @@
-export interface Person {
-  fname: string;
-  lname: string;
-  age: number;
-  city: string;
-}
+import { Person } from '../models';
 
 export const PERSONS_DATA: Person[] = [
   { fname: 'John', lname: 'Smith', age: 28, city: 'New York' },

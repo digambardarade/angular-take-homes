@@ -1,12 +1,6 @@
-export interface Student {
-  name: string;
-  age: number;
-  gender: 'Male' | 'Female';
-  course: string;
-  isActive: boolean;
-}
+import { Student } from '../models';
 
-export const students: Student[] = [
+export const STUDENTS_DATA: Student[] = [
   {
     name: 'John Smith',
     age: 22,

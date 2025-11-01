@@ -1,9 +1,4 @@
-export interface User {
-  uid: number;
-  name: string;
-  department: string;
-  role: string;
-}
+import { User } from '../models';
 
 export const USERS_DATA: User[] = [
   { uid: 1001, name: 'Alice Johnson', department: 'Engineering', role: 'Software Developer' },

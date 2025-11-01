@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Student, students } from './students';
+import { Student } from '../../../models';
+import { STUDENTS_DATA } from '../../../data';
 
 @Component({
   selector: 'app-students',
@@ -7,7 +8,7 @@ import { Student, students } from './students';
   styleUrls: ['./students.component.scss']
 })
 export class StudentsComponent implements OnInit {
-  students: Student[] = students;
+  students: Student[] = STUDENTS_DATA;
 
   constructor() { }
 

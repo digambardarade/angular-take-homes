@@ -1,4 +1,4 @@
-export const frontendSkills: string[] = [
+export const FRONTEND_SKILLS: string[] = [
   'Angular',
   'TypeScript',
   'JavaScript',

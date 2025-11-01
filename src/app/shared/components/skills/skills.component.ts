@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { frontendSkills } from './skills';  
+import { FRONTEND_SKILLS } from '../../../data';  
 
 @Component({
   selector: 'app-skills',
@@ -8,7 +8,7 @@ import { frontendSkills } from './skills';
 })
 export class SkillsComponent implements OnInit {
 
-  feSkills: string[] = frontendSkills;
+  feSkills: string[] = FRONTEND_SKILLS;
 
   constructor() { }
 

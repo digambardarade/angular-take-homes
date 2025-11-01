@@ -1,8 +1,4 @@
-export interface Product {
-  pid: number;
-  pname: string;
-  price: number;
-}
+import { Product } from '../models';
 
 export const PRODUCTS_DATA: Product[] = [
   { pid: 1, pname: 'Laptop', price: 999.99 },
